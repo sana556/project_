@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+        body { 
+            background: url('background-image.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #333; 
+            text-align: left; 
+            padding-left: 50px; 
+        }
+
+        /* Header */
+        header { background: #333; color: #fff; padding: 15px 50px; position: fixed; width: 100%; top: 0; left: 0; box-shadow: 0 2px 5px rgba(0,0,0,0.2); text-align: left; }
+        .logo { font-size: 24px; font-weight: bold; display: inline-block; }
+        nav ul { list-style: none; display: inline-block; margin-left: 50px; }
+        nav ul li { display: inline; margin: 0 15px; }
+        nav ul li a { color: #fff; text-decoration: none; font-size: 18px; transition: 0.3s; }
+        nav ul li a:hover { color: #f4a261; }
+
+        /* About Section */
+        .about-container { display: flex; align-items: center; justify-content: flex-start; height: 100vh; padding: 100px 50px; }
+        .about-content { max-width: 600px; }
+        .about-content h1 { font-size: 40px; color: #333; animation: fadeIn 2s ease-in-out; }
+        .about-content p { font-size: 18px; margin: 20px 0; line-height: 1.6; color: #555; }
+
+        /* Button */
+        .btn { background: #f4a261; color: white; padding: 12px 25px; text-decoration: none; border-radius: 5px; display: inline-block; transition: 0.3s; font-size: 18px; }
+        .btn:hover { background: #e76f51; transform: scale(1.1); }
+
+        /* Image */
+        .about-img img { width: 400px; border-radius: 10px; box-shadow: 0px 5px 15px rgba(0,0,0,0.3); animation: slideIn 2s ease-in-out; margin-left: 50px; }
+
+        /* Animations */
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+        @keyframes slideIn { from { transform: translateX(-50px); opacity: 0; } to { transform: translateX(0); opacity: 1; } }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .about-container { flex-direction: column; text-align: left; }
+            .about-img img { width: 300px; margin-left: 0; margin-top: 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">Welcome to my Website</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="about-container">
+        <div class="about-content">
+            <h1>About Us</h1>
+            <p>Welcome to our website! We are dedicated to providing high-quality services with a passion for excellence. Our team works hard to ensure customer satisfaction and innovation in everything we do.</p>
+            <a href="#" class="btn">Learn More</a>
+        </div>
+        <div class="about-img">
+            <img src="baker.jpg" alt="About Us">
+        </div>
+    </section>
+
+</body>
+</html>
